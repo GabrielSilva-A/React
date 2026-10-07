@@ -1,0 +1,15 @@
+main {
+    text-align: center;
+    background-color: black;
+    color: white;
+    min-height: 70vh;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    background-color: black;
+    padding: 10px 0 150px 0;
+    text-align: center;
+    margin-top: 2px;
+    color: white;
+}

@@ -1,0 +1,72 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    max-width: 30rem;
+
+    margin: 2rem auto;
+    padding: 2rem;
+
+    background-color: #8DE2D6;
+    color: black;
+
+    border-radius: 10px;
+
+    gap: 1.2rem;
+}
+
+.formulario h3 {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+.campo label {
+    color: black;
+    font-weight: bold;
+}
+
+.campo input {
+    padding: 0.8rem;
+
+    background-color: white;
+    color: black;
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    font-size: 1rem;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: white;
+}
+
+.boton {
+    padding: 0.8rem 1.5rem;
+
+    background-color: black;
+    color: white;
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: white;
+    color: black;
+}
