@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export function Libros({Mensaje}) {
     console.log('Libros component rendered with Mensaje:', Mensaje);
@@ -37,18 +38,19 @@ export function Libros({Mensaje}) {
         }
 
     return (
-    <div>
-    <h1>{Mensaje}</h1>
-    <ul>
-    {libros.map((libro) => (
-    <li key={libro.id}>
-    <h2>{libro.nombre}</h2>
-    <img src={libro.imagen} alt={libro.nombre} width="150" />
-    <p>Precio: ${libro.precio}</p>
-    </li>
-    ))}
-    </ul>
-    </div>
-    );
+        <div>
+            <h1>{Mensaje}</h1>
+                <ul>
+                {libros.map((libro) => (
+                    <li key={libro.id}>
+                        <h2>{libro.nombre}</h2>
+                        <img src={libro.imagen} alt={libro.nombre} width="150" />
+                        <p>Precio: ${libro.precio}</p>
+                        <Link to={`/libros/${libro.id}`}>Ver detalle</Link>
+                    </li>
+                    ))}
+                </ul>
+        </div>
+        );
     }
 
