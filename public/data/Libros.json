@@ -5,7 +5,7 @@
     { "id": "2545", "nombre": "Un Mundo Feliz", "autor": "Aldous Huxley", "año": 1932, "imagen": "/images/un_mundo_feliz.jpg" },
     { "id": "3456", "nombre": "Cien Años de Soledad", "autor": "Gabriel García Márquez", "año": 1967, "imagen": "/images/cien_años_de_soledad.jpg" },
     { "id": "9012", "nombre": "La Divina Comedia", "autor": "Dante Alighieri", "año": 1320, "imagen": "/images/la_divina_comedia.jpg" },
-    { "id": "9123", "nombre": "Fausto", "autor": "Johann Wolfgang von Goethe", "año": 1808, "imagen": "/images/Fausto.jpg" }
-
+    { "id": "9123", "nombre": "Fausto", "autor": "Johann Wolfgang von Goethe", "año": 1808, "imagen": "/images/Fausto.jpg" },
+    { "id": "1010", "nombre": "El Forastero Misterioso", "autor": "Marck Twain", "año": 1870, "imagen": "https://i.ibb.co/gZzwc7r9/el-forastero-misterioso.jpg" }
 ]
 

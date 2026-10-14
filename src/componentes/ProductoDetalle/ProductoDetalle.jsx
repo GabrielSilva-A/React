@@ -4,32 +4,32 @@ import { useParams } from 'react-router-dom';
 const ProductoDetalle = () => {
 
         const { id } = useParams();
-        const [producto, setProducto] = useState(null);
+        const [libros, setLibros] = useState(null);
 
         useEffect(() => {
-            fetch('/data/productos.json')
+            fetch('/data/Libros.json')
             .then(response => response.json())
             .then(data => {
-                const productoEncontrado = data.find(p => p.id === parseInt(id));
-                setProducto(productoEncontrado);
+                const libroEncontrado = data.find(p => p.id === parseInt(id));
+                setLibros(libroEncontrado);
                 })
             .catch(error => console.error("Error al cargar el producto:", error));
         }, [id]);
 
-        if (!producto) {
+        if (!libros) {
             return <h2>Cargando detalle del producto...</h2>;
         }
-        if (!producto.id) {
+        if (!libros.id) {
         return <h2>Producto no encontrado.</h2>;
         }
         
     return (
         <div>
-        <h2>Detalle del Producto: {producto.nombre}</h2>
-        <img src={producto.imagen} alt={producto.nombre} style={{ maxWidth:
-        '400px' }} />
-        <h3>${producto.precio}</h3>
-        <p>{producto.descripcion}</p>
+            <h2>Detalle del Producto: {libros.nombre}</h2>
+            <img src={libros.imagen} alt={libros.nombre} style={{ maxWidth:
+            '400px' }} />
+            <h3>${libros.precio}</h3>
+            <p>{libros.descripcion}</p>
         </div>
     );
 };
