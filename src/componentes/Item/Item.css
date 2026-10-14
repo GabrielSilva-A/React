@@ -1,67 +1,164 @@
+
 .item {
-    background-color: #f9f9f9;
-    color: black;
+  background-color: #e5e5e5;
+  color: black;
 
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 8px;
+  width: 100%;
+  max-width: 20rem;
+  padding: 15px;
+  margin: 0 auto;
 
-    text-align: center;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  box-sizing: border-box;
 
-    max-width: 20rem;
-    margin: 0 auto;
+  text-align: center;
 
-    box-sizing: border-box;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
 }
 
 .item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(141, 226, 214, 0.4);
-    cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(141, 226, 214, 0.4);
 }
+
+/* Imagen */
 
 .item .images {
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 
-    overflow: hidden;
-
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+  padding: 10px;
+  overflow: hidden;
 }
+
+.item .images img {
+  width: 100%;
+  max-width: 200px;
+  height: 240px;
+  object-fit: contain;
+}
+
+/* Información del libro */
 
 .item .details {
-    text-align: center;
+  margin-top: 12px;
+  color: black;
+}
 
-    margin-top: 10px;
+.informacion-libro {
+  padding: 12px 8px;
+  border-bottom: 1px solid #bbb;
+}
+
+.informacion-libro h3 {
+  color: black;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.informacion-libro p {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Contenedor de acciones */
+
+.acciones-libro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding-top: 15px;
+}
+
+/* Enlace de detalle */
+
+.btn-detalle {
+  display: block;
+  padding: 10px;
+
+  background-color: #d0d0d0;
+  color: black;
+
+  border: 1px solid #999;
+  border-radius: 6px;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-detalle:hover {
+  background-color: #bdbdbd;
+}
+
+/* Botones */
+
+.botones-libro {
+  display: flex;
+  gap: 10px;
+}
+
+.item .botones-libro button {
+  padding: 10px;
+  border-radius: 6px;
+
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.item .btn-favorito {
+  flex: 0 0 55px;
+
+  background-color: white;
+  color: black;
+  border: 1px solid #999;
+}
+
+.item .btn-favorito:hover {
+  background-color: #ddd;
+}
+
+.item .btn-carrito {
+  flex: 1;
+
+  background-color: #8DE2D6;
+  color: black;
+  border: 1px solid #55a99d;
+}
+
+.item .btn-carrito:hover {
+  background-color: #6acbbb;
+}
+
+.item .botones-libro button:focus-visible,
+.item .btn-detalle:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 3px;
+}
+
+/* Pantallas pequeñas */
+
+@media (max-width: 400px) {
+  .item {
     padding: 10px;
+  }
 
-    background-color: #f9f9f9;
-    color: black;
+  .botones-libro {
+    flex-direction: column;
+  }
 
-    border: 1px solid #ddd;
-    border-radius: 5px;
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.item .details h3,
-.item .details p {
-    color: black;
-}
-
-.item button {
-    background-color: transparent;
-    color: black;
-
-    border: none;
-
-    font-size: 40px;
-    cursor: pointer;
+  .item .btn-favorito {
+    flex: auto;
+  }
 }

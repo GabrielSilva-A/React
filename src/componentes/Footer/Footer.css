@@ -1,11 +1,45 @@
+
 footer {
-    background-color: #8DE2D6;
-    padding: 2rem 1rem;
-    text-align: center;
-    margin-top: 2px;
-    color: black;
+  background-color: #8DE2D6;
+  color: black;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 2px;
 }
 
 footer p {
-    color: black;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  transition: background-color 0.2s ease;
+}
+
+.github-link:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.github-link:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .github-link {
+    font-size: 0.85rem;
+  }
 }

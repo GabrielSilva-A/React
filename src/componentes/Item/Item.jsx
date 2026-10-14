@@ -21,31 +21,52 @@ export function Item({ id, nombre, autor, año, precio, stock, imagen }) {
         setFavorito(!favorito);
     };
 
-    return (
-        <div className="item" style={{width: '20rem', height: 'auto'}} >
-            <div className="images">
-                <img src={`${imagen}`}
-                alt={nombre}
-                style={{ width: '50rem', height: '30rem'
-                }}/>
-            </div>
-            <div className="details">
-            <h3>{nombre}</h3>
-            <p>Autor: {autor}</p>
-            <p>Año: {año}</p>
-            <p>Precio: ${precio}</p>
-            <p>Stock: {stock}</p>
-            <Link to={`/libros/${id}`}>Ver detalle</Link><br />
-            <div>
-                <button onClick={marcarFavorito}>
-                    {favorito ? "★" : "☆"}
-                </button><br />
+return (
+  <div className="item">
 
-                <button onClick={handleAddToCart}>
-                    +🛒
-                </button>
-            </div>
-            </div>
+    <div className="images">
+      <img src={imagen} alt={nombre} />
+    </div>
+
+    <div className="details">
+
+      <div className="informacion-libro">
+        <h3>{nombre}</h3>
+        <p>Autor: {autor}</p>
+        <p>Año: {año}</p>
+        <p>Precio: ${precio}</p>
+        <p>Stock: {stock}</p>
+      </div>
+
+      <div className="acciones-libro">
+
+        <Link
+          className="btn-detalle"
+          to={`/libros/${id}`}
+        >
+          Ver detalle
+        </Link>
+
+        <div className="botones-libro">
+
+          <button
+            className="btn-favorito"
+            onClick={marcarFavorito}
+          >
+            {favorito ? "★" : "☆"}
+          </button>
+
+          <button
+            className="btn-carrito"
+            onClick={handleAddToCart}
+          >
+            + 🛒 Agregar
+          </button>
+
         </div>
+      </div>
+
+    </div>
+  </div>
 );
 }
