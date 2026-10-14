@@ -10,7 +10,7 @@ const ProductoDetalle = () => {
             fetch('/data/Libros.json')
             .then(response => response.json())
             .then(data => {
-                const libroEncontrado = data.find(p => p.id === parseInt(id));
+                const libroEncontrado = data.find(p => p.id === id);
                 setLibros(libroEncontrado);
                 })
             .catch(error => console.error("Error al cargar el producto:", error));

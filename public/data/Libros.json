@@ -1,11 +1,11 @@
 
 [
-    { "id": "1234", "nombre": "El señor de los anillos", "autor": "J.R.R. Tolkien", "año": 1954, "imagen": "/images/el_señor_de_los_anillos.jpg " },
-    { "id": "2344", "nombre": "1984", "autor": "George Orwell", "año": 1949, "imagen": "/images/1984.jpg" },
-    { "id": "2545", "nombre": "Un Mundo Feliz", "autor": "Aldous Huxley", "año": 1932, "imagen": "/images/un_mundo_feliz.jpg" },
-    { "id": "3456", "nombre": "Cien Años de Soledad", "autor": "Gabriel García Márquez", "año": 1967, "imagen": "/images/cien_años_de_soledad.jpg" },
-    { "id": "9012", "nombre": "La Divina Comedia", "autor": "Dante Alighieri", "año": 1320, "imagen": "/images/la_divina_comedia.jpg" },
-    { "id": "9123", "nombre": "Fausto", "autor": "Johann Wolfgang von Goethe", "año": 1808, "imagen": "/images/Fausto.jpg" },
-    { "id": "1010", "nombre": "El Forastero Misterioso", "autor": "Marck Twain", "año": 1870, "imagen": "https://i.ibb.co/gZzwc7r9/el-forastero-misterioso.jpg" }
+    { "id": "1234", "nombre": "El señor de los anillos", "autor": "J.R.R. Tolkien", "año": 1954, "imagen": "/images/el_señor_de_los_anillos.jpg ", "precio": 29.99, "descripcion": "Una épica novela de fantasía." },
+    { "id": "2344", "nombre": "1984", "autor": "George Orwell", "año": 1949, "imagen": "/images/1984.jpg", "precio": 19.99, "descripcion": "Una novela distópica sobre un futuro totalitario." },
+    { "id": "2545", "nombre": "Un Mundo Feliz", "autor": "Aldous Huxley", "año": 1932, "imagen": "/images/un_mundo_feliz.jpg", "precio": 24.99, "descripcion": "Una visión futurista de una sociedad controlada por la tecnología." },
+    { "id": "3456", "nombre": "Cien Años de Soledad", "autor": "Gabriel García Márquez", "año": 1967, "imagen": "/images/cien_años_de_soledad.jpg", "precio": 34.99, "descripcion": "Una saga familiar mágica y realista." },
+    { "id": "9012", "nombre": "La Divina Comedia", "autor": "Dante Alighieri", "año": 1320, "imagen": "/images/la_divina_comedia.jpg", "precio": 39.99, "descripcion": "Un poema épico sobre el viaje del alma a través del Infierno, el Purgatorio y el Paraíso." },
+    { "id": "9123", "nombre": "Fausto", "autor": "Johann Wolfgang von Goethe", "año": 1808, "imagen": "/images/Fausto.jpg", "precio": 29.99, "descripcion": "La historia de un hombre que hace un pacto con el diablo." },
+    { "id": "1010", "nombre": "El Forastero Misterioso", "autor": "Marck Twain", "año": 1870, "imagen": "https://i.ibb.co/gZzwc7r9/el-forastero-misterioso.jpg", "precio": 22.99, "descripcion": "Una novela sobre un enigmático visitante en un pequeño pueblo." }
 ]
 
