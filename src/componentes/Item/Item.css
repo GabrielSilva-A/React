@@ -66,7 +66,6 @@
 
 .informacion-libro {
   padding: 10px 4px 14px;
-  border-bottom: 1px solid #bbb;
 }
 
 .informacion-libro h3 {
@@ -86,6 +85,7 @@
 
 /* Acciones al final de la tarjeta */
 
+
 .acciones-libro {
   display: flex;
   flex-direction: column;
@@ -93,7 +93,10 @@
 
   margin-top: auto;
   padding-top: 14px;
+
+  border-top: 1px solid #bbb;
 }
+
 
 /* Enlace de detalle */
 
