@@ -13,9 +13,7 @@ function App() {
     
         <Routes >
           <Route element={<Layout />}>
-            <Route path="/"  element={<ItemListContainer Mensaje="Destacados del mes"/>}/>
-            <Route path="/productos" element={<ItemListContainer Mensaje="Nuestros productos destacados" />}/>
-            <Route path="/destacados" element={<Libros Mensaje="Productos destacados" />}/>
+            <Route path="/"  element={<ItemListContainer Mensaje="Libros Disponibles"/>}/>
             <Route path="/formulario" element={<FormularioContainer />}/>
             <Route path="/libros/:id" element={<ProductoDetalle Mensaje="Detalle del libro" />}/>
             <Route path="/carrito" element={<Cart />}/>

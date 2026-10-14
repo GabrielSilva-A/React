@@ -10,8 +10,6 @@ return (
 <nav>
     <ul>
         <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/productos">Productos</Link></li>
-        <li><Link to="/destacados">Destacados</Link></li>
         <li><Link to="/formulario">Alta de producto</Link></li>
         <li><Link to="/carrito">Carrito 🛒 {totalItems > 0 && <span>{totalItems}</span>}</Link></li>
     </ul>
