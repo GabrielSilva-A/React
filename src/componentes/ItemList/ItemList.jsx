@@ -1,12 +1,13 @@
-import { Item } from "../Item/Item";
 
+import { Item } from "../Item/Item";
+import "./ItemList.css";
 
 export function ItemList({ libros }) {
-    return (
-        <div style={{ display: 'flex', gap: '20px' }}>
-        {libros.map(libr => (
-        <Item key={libr.id} {...libr} />
-        ))}
-        </div>
-);
+  return (
+    <div className="lista-libros">
+      {libros.map(libro => (
+        <Item key={libro.id} {...libro} />
+      ))}
+    </div>
+  );
 }
