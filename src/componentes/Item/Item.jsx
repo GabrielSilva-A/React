@@ -8,7 +8,7 @@ export function Item({ id, nombre, autor, año, precio, stock, imagen }) {
     const producto = { id, nombre, autor, año, precio, stock, imagen };
 
     const { addToCart } = useCart();
-    const [cantidad, setCantidad] = useState(0);
+    const [cantidad, setCantidad] = useState(1);
 
     const handleAddToCart = () => {
         addToCart(producto, cantidad);
@@ -35,13 +35,16 @@ export function Item({ id, nombre, autor, año, precio, stock, imagen }) {
             <p>Año: {año}</p>
             <p>Precio: ${precio}</p>
             <p>Stock: {stock}</p>
-            <Link to={`/libros/${id}`}>Ver detalle</Link>
-            <button onClick={marcarFavorito}>
-                {favorito ? "★" : "☆"}
-            </button>
-            <button onClick={handleAddToCart}>
-                Agregar {cantidad} al carrito
-            </button>
+            <Link to={`/libros/${id}`}>Ver detalle</Link><br />
+            <div>
+                <button onClick={marcarFavorito}>
+                    {favorito ? "★" : "☆"}
+                </button><br />
+
+                <button onClick={handleAddToCart}>
+                    +🛒
+                </button>
+            </div>
             </div>
         </div>
 );

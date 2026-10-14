@@ -18,14 +18,15 @@ const Cart = () => {
       <h1>Carrito de Compras</h1>
       {cart.map(item => (
         <div key={item.id} className="cart-item">
-        <h4>{item.nombre}</h4>
-        <p>Cantidad: {item.quantity}</p>
-        <p>Precio unitario: ${item.precio}</p>
-        <p>Subtotal: ${item.precio * item.quantity}</p>
+          <h4>{item.nombre}</h4>
+          <img src={item.imagen} alt={item.nombre} style={{ width: '100px', height: '100px' }} />
+          <p>Cantidad: {item.quantity}</p>
+          <p>Precio unitario: ${item.precio}</p>
+          <p>Subtotal: ${item.precio * item.quantity}</p>
         </div>
       ))}
         <hr />
-        <h3>Total a pagar: ${getCartTotal()}</h3>
+        <h6>Total a pagar: ${getCartTotal()}</h6>
         <button onClick={clearCart}>Vaciar Carrito</button>
     </div>
     );
